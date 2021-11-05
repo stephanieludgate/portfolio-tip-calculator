@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+body {
+    font-family: Roboto;
+    background: #450bd2;
+    background: linear-gradient(to left, #450bd2, #8f10ef);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #450bd2, #A410EF);
+}
+
+#container {
+  width: 360px;
+  margin: 50px auto;
+  background: #eee;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+}
+
+#inner-container {
+    padding: 20px 30px;
+}
+
+h1 {
+    background: #212529;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+}
+
+
+/*** BILL AMOUNT ***/
+.dollarSign {
+  display: inline;
+}
+
+#validate-bill, #tip-error {
+    font-family: Roboto;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #c410ef;
+    text-align: end;
+}
+
+
+/*** SERVICE AMOUNT ***/
+#radiogroup label {
+    border-color: #333132;
+}
+
+i.emoji{
+    font-size: 24px;
+}
+
+#service {
+  padding: 13px 13px 20px 20px;
+  font-size: 25px;
+}
+
+
+/*TOGGLE SLIDE*/
+#toggle-row {
+    display: flex;
+    align-items: center;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-left: 16px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before,
+.slider .number {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider .number {
+  background: none;
+  font-size: 14px;
+  left: 9px;
+  top: 9px;
+}
+
+input:checked+.slider {
+  background-color: #c410ef;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before,
+input:checked+.slider .number {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+/*** RESET BUTTON ***/
+button {
+  text-transform: uppercase;
+}
+
+
+/** RESULTS **/
+#results {
+    font-family: 'Source Code Pro', monospace;
+}
+
+#receipt {
+    background-color: white;
+}
+
+#receipt:before {
+    background: linear-gradient(-45deg, white 6px, transparent 0), linear-gradient(45deg, white 6px, #eee 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 12px 12px;
+    content: " ";
+    display: block;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 12px;
+}
+
+#receipt:after {
+    background: linear-gradient(-45deg, #eee 6px, transparent 0), linear-gradient(45deg, #eee 6px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 12px 12px;
+    content: " ";
+    display: block;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 12px;
+}
+
+#receipt-content {
+    padding: 32px 16px;
+}
+
+/*** TIP ***/
+#tip-row.strikeout, #total-row.muted {
+    position: relative;
+    color: #ccc;
+}
+
+#tip-row.strikeout:before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-bottom: 1px solid #111;
+    width: 92%;
+    margin: 0px 12px;
+}
+
+/*** HR ***/
+hr#hr-receipt {
+    height: 2px;
+    opacity: 100;
+}
+
+
+/*** PAYMENT SVGs ***/
+#payments {
+    text-align: center;
+    margin-top: 32px;
+}
+
+svg.payment-icon {
+    height: 30px;
+    fill: #ccc;
+}
+
+svg.payment-icon:not(:last-child) {
+    padding-right: 4px;
+}
