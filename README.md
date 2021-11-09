@@ -2,7 +2,7 @@
 Simple JavaScript program to calculate tip and split bill (up to 8 ways).
 
 ### Before Input
-Below is a screenshot of what the app looks in its original state.  Note that nothing will happen unless a valid bill amount is enetered (a number above zero) - validation and focus on the input will occur is bill is invalid.
+Below is a screenshot of what the app looks in its original state.  Note that nothing will happen unless a valid bill amount is enetered (a number above zero) - validation and focus on the input will occur is bill is invalid.\
 <img width="704" alt="screenshor-original-state" src="https://user-images.githubusercontent.com/58275084/140566171-161e4528-1676-4f6d-91a7-9ee6a4eaed13.png">
 <img width="698" alt="screenshot-input-validation" src="https://user-images.githubusercontent.com/58275084/140567790-117a6012-4cb5-4766-9883-0eb8785d246a.png">
 
